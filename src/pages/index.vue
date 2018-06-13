@@ -2,7 +2,12 @@
   <div>
     <v-selection :selections="selections" @on-change-selection="changeSelection"></v-selection>
     <v-counter @on-change="changeCounter"></v-counter>
-    <v-slider :sliders="sliders"></v-slider>
+    <div style="padding-top:20px;">
+      <v-slider :sliders="sliders" :speed="3000"></v-slider>
+    </div>
+    <div style="padding-top:20px;">
+      <v-slider0 :sliders="sliders" :speed="3000"></v-slider0>
+    </div>
   </div>
 </template>
 
@@ -10,6 +15,7 @@
 import vSelection from '@/components/base/selection'
 import vCounter from '@/components/base/counter'
 import vSlider from '@/components/base/slider'
+import vSlider0 from '@/components/base/slider0'
 import '../mock/mock'
 
 export default {
@@ -17,7 +23,8 @@ export default {
   components: {
     vSelection,
     vCounter,
-    vSlider
+    vSlider,
+    vSlider0
   },
   data () {
     return {

@@ -1,8 +1,8 @@
 <template>
   <div class="slider-wrap" v-if="sliders.length !== 0" @mouseover="clearInv" @mouseout="runInv">
     <div class="slider-inner">
-      <ul class="slider clearfix" :style="{width: 900 * sliders.length + 'px', transform: 'translateX('+ ((-900) * activeIndex) + 'px)'}">
-        <li v-for="(item, index) in sliders" :key="index">
+      <ul class="slider clearfix">
+        <li :class="{active: activeIndex === index}" v-for="(item, index) in sliders" :key="index">
           <a :href="item.link">
             <img :src="item.src" />
           </a>
@@ -20,8 +20,11 @@
   position: relative; width: 900px; overflow: hidden;
   .slider-inner {width: 900px; overflow: hidden;}
   .slider {
-    transition: all 0.5s;
-    li {float: left;}
+    position: relative; height: 400px;
+    li {
+      position: absolute; left: 0; top: 0; transition: all 0.5s; opacity: 0;
+      &.active {opacity: 1;}
+    }
     img {display: block;}
   }
   .slider-tigger {

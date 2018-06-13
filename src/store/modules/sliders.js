@@ -22,7 +22,7 @@ const mutations = {
   updateSliders (state, sliders) {
     state.sliders = sliders
   },
-  updateParams (state, {key, val}) {
+  updateSlidersParams (state, {key, val}) {
     state.params[key] = val
     console.log(state.params)
   }

@@ -1,5 +1,8 @@
 import axios from 'axios'
-
+/*
+ * 正常来说，下拉菜单数据不必要使用vuex，
+ * 本示例旨在演示vuex使用流程
+ */
 const state = {
   selections: [],
   params: {}
