@@ -8,6 +8,9 @@
     <div style="padding-top:20px;">
       <v-slider0 :sliders="sliders" :speed="3000"></v-slider0>
     </div>
+    <div style="padding-top:20px;">
+      <v-slider-loop :sliders="sliders" :speed="3000"></v-slider-loop>
+    </div>
   </div>
 </template>
 
@@ -16,6 +19,7 @@ import vSelection from '@/components/base/selection'
 import vCounter from '@/components/base/counter'
 import vSlider from '@/components/base/slider'
 import vSlider0 from '@/components/base/slider0'
+import vSliderLoop from '@/components/base/sliderLoop'
 import '../mock/mock'
 
 export default {
@@ -24,7 +28,8 @@ export default {
     vSelection,
     vCounter,
     vSlider,
-    vSlider0
+    vSlider0,
+    vSliderLoop
   },
   data () {
     return {

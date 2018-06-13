@@ -27,9 +27,9 @@ export default {
     data: Mock.mock({
       'imgList|4': ['imgList']
     })['imgList']
-      .map(x => {
+      .map((x, index) => {
         return {
-          src: Mock.Random.image('900x400', Mock.Random.color()),
+          src: Mock.Random.image('600x300', Mock.Random.color(), index + 1),
           link: Mock.Random.url(),
           title: Mock.Random.title()
         }

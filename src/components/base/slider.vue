@@ -1,7 +1,7 @@
 <template>
   <div class="slider-wrap" v-if="sliders.length !== 0" @mouseover="clearInv" @mouseout="runInv">
     <div class="slider-inner">
-      <ul class="slider clearfix" :style="{width: 900 * sliders.length + 'px', transform: 'translateX('+ ((-900) * activeIndex) + 'px)'}">
+      <ul class="slider clearfix" :style="{width: 600 * sliders.length + 'px', transform: 'translateX('+ ((-600) * activeIndex) + 'px)'}">
         <li v-for="(item, index) in sliders" :key="index">
           <a :href="item.link">
             <img :src="item.src" />
@@ -17,8 +17,8 @@
 </template>
 <style lang="less" scoped>
 .slider-wrap {
-  position: relative; width: 900px; overflow: hidden;
-  .slider-inner {width: 900px; overflow: hidden;}
+  position: relative; width: 600px; overflow: hidden;
+  .slider-inner {width: 600px; overflow: hidden;}
   .slider {
     transition: all 0.5s;
     li {float: left;}

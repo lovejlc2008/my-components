@@ -17,18 +17,18 @@
 </template>
 <style lang="less" scoped>
 .slider-wrap {
-  position: relative; width: 900px; overflow: hidden;
-  .slider-inner {width: 900px; overflow: hidden;}
+  position: relative; width: 600px; overflow: hidden;
+  .slider-inner {width: 600px; overflow: hidden;}
   .slider {
-    position: relative; height: 400px;
+    position: relative; height: 300px;
     li {
-      position: absolute; left: 0; top: 0; transition: all 0.5s; opacity: 0;
-      &.active {opacity: 1;}
+      position: absolute; left: 0; top: 0; transition: all 0.5s; opacity: 0; z-index: 1;
+      &.active {opacity: 1; z-index: 2;}
     }
     img {display: block;}
   }
   .slider-tigger {
-    position: absolute; left: 0; bottom: 0; width: 100%; padding: 3px 10px; background-color: rgba(0,0,0,0.5); box-sizing: border-box;
+    position: absolute; left: 0; bottom: 0; width: 100%; padding: 3px 10px; background-color: rgba(0,0,0,0.5); box-sizing: border-box; z-index: 3;
   }
   .title {color: #fff; font-size: 16px;}
   .pagination-bullets {position: absolute; right: 10px; top: 3px; color: #fff; font-size: 14px;}
