@@ -43,7 +43,7 @@ export default {
       .map((x, index) => {
         return {
           src: Mock.Random.image('100x' + Mock.mock({'number|100-200': 200})['number'], Mock.Random.color(), index + 1),
-          link: Mock.Random.url(),
+          href: Mock.Random.url(),
           title: Mock.Random.title()
         }
       })
