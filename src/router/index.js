@@ -9,7 +9,10 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'index',
+      name: 'base',
+      meta: {
+        title: '轮播图demo'
+      },
       component: index
     }
   ]

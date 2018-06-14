@@ -2,6 +2,7 @@ import Vuex from 'vuex'
 import Vue from 'vue'
 import selections from './modules/selections'
 import sliders from './modules/sliders'
+
 Vue.use(Vuex)
 
 export default new Vuex.Store({

@@ -5,6 +5,7 @@ import Layout from './components/layout'
 import router from './router'
 import store from './store'
 
+Vue.use(require('vue-wechat-title'))
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
