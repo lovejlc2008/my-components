@@ -6,6 +6,7 @@
 
 <script>
 import { eventBus } from '../eventBus'
+import '../mock/mock'
 export default {
   name: 'layout',
   data () {
