@@ -1,5 +1,6 @@
 <template>
   <div class="container"  @click="resetConponent" :style="{minHeight:clientHeight + 'px'}">
+    <div v-wechat-title="$route.meta.title"></div>
     <router-view/>
   </div>
 </template>

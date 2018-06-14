@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div v-wechat-title="$route.meta.title"></div>
     <v-selection :selections="selections" @on-change-selection="changeSelection"></v-selection>
     <v-counter @on-change="changeCounter"></v-counter>
     <div style="padding-top:20px;">
