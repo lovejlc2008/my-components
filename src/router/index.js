@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import index from '@/pages/index'
 import slider from '@/pages/slider'
 import waterfall from '@/pages/waterfall'
+import datepicker from '@/pages/datepicker'
 
 Vue.use(Router)
 
@@ -32,6 +33,14 @@ export default new Router({
         title: '瀑布流demo'
       },
       component: waterfall
+    },
+    {
+      path: '/datepicker',
+      name: 'datepicker',
+      meta: {
+        title: '日历控件'
+      },
+      component: datepicker
     }
   ]
 })
