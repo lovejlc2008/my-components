@@ -1,10 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/pages/index'
-import slider from '@/pages/slider'
-import waterfall from '@/pages/waterfall'
-import datepicker from '@/pages/datepicker'
-import pagination from '@/pages/pagination'
+import {load} from '@/util/common'
 
 Vue.use(Router)
 
@@ -17,7 +13,7 @@ export default new Router({
       meta: {
         title: '组件列表'
       },
-      component: index
+      component: load('pages/index')
     },
     {
       path: '/sliders',
@@ -25,7 +21,7 @@ export default new Router({
       meta: {
         title: '轮播图demo'
       },
-      component: slider
+      component: load('pages/slider')
     },
     {
       path: '/waterfall',
@@ -33,7 +29,7 @@ export default new Router({
       meta: {
         title: '瀑布流demo'
       },
-      component: waterfall
+      component: load('pages/waterfall')
     },
     {
       path: '/datepicker',
@@ -41,7 +37,7 @@ export default new Router({
       meta: {
         title: '日历控件'
       },
-      component: datepicker
+      component: load('pages/datepicker')
     },
     {
       path: '/pagination',
@@ -49,7 +45,7 @@ export default new Router({
       meta: {
         title: '分页组件'
       },
-      component: pagination
+      component: load('pages/pagination')
     }
   ]
 })
