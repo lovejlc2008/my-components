@@ -2,7 +2,7 @@
   <div style="padding:20px;">
     <datepicker v-model="date" language="zh-cn" style="width:150px; margin-bottom:20px;"></datepicker>
 
-    <vuejs-datepicker v-model="date1" :language="zh" :format="customFormatter"></vuejs-datepicker>
+    <vuejs-datepicker input-class="vJsdatePicker" v-model="date1" :language="zh" :format="customFormatter"></vuejs-datepicker>
   </div>
 </template>
 
@@ -54,3 +54,7 @@ function dateformat (date, fmt) {
   return fmt
 }
 </script>
+
+<style>
+.vJsdatePicker {width: 150px; padding:5px 5px;}
+</style>
