@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "laydate": "^1.0.7",
     "vue": "^2.5.2",
     "vue-date": "^1.1.10",
     "vue-router": "^3.0.1",
